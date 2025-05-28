@@ -1,0 +1,8 @@
+리엑트
+
+npx create-react-app bootstrapcomponent
+
+라우터 설정(라우팅 설치를 해야 연결이 됨)
+npm i -D react-router-dom
+
+
