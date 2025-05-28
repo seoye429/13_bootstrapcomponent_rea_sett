@@ -1,8 +1,10 @@
-리엑트
+리엑트 설치
 
 npx create-react-app bootstrapcomponent
 
 라우터 설정(라우팅 설치를 해야 연결이 됨)
 npm i -D react-router-dom
 
-
+리엑트 부트스트랩 설치
+npm install bootstrap
+npm install react-bootstrap
