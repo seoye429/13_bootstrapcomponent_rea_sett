@@ -1,46 +1,56 @@
-import {Outlet,Link} from "react-router-dom";       //outlet은 헤더랑 바디의 구분선
+import { Outlet,Link } from "react-router-dom"; /*헤더랑 바디 분리*/
 
-const Header=()=>{
+const Header = () => {
     return(
         <>
         <nav>
             <ul className="nav">
-                <li className="nav-item">
-                    <Link to="/" className="nav-link">Home</Link>
+                <li className="nav-item"> 
+                    <Link to="/" className="nav-link mb-5 mt-2 text-danger">Home</Link> {/*버튼을 감싸서 url을 연결*/}
                 </li>
                 <li className="nav-item">
-                    <Link to="/container" className="nav-link">부트스트랩 컨테이너</Link>
-                </li>
-
-                <li className="nav-item">
-                    <Link to="/typo" className="nav-link">타이포 그래픽</Link>
+                    <Link to="/container" className="nav-link mb-5 mt-2 text-secondary">Bootstarp_Container</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/color" className="nav-link">부트스트랩 기본컬러</Link>
+                    <Link to="/typo" className="nav-link mb-5 mt-2 text-secondary">Typography</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/tb" className="nav-link">테이블</Link>
+                    <Link to="/color" className="nav-link mb-5 mt-2 text-secondary">Bootstrap_basic_color</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/img" className="nav-link">이미지</Link>
+                    <Link to="/table" className="nav-link mb-5 mt-2 text-secondary">Table</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/jumbo" className="nav-link">Jumbotron</Link>
+                    <Link to="/img" className="nav-link mb-5 mt-2 text-secondary">Image</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/alerts" className="nav-link">경고창</Link>
+                    <Link to="/jumbo" className="nav-link mb-5 mt-2 text-secondary">Jumbotron</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/button" className="nav-link">버튼</Link>
+                    <Link to="/alerts" className="nav-link mb-5 mt-2 text-secondary">Alerts</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/badges" className="nav-link">뱃지</Link>
+                    <Link to="/btn" className="nav-link mb-5 mt-2 text-secondary">Button</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/badges" className="nav-link mb-5 mt-2 text-secondary">Badges</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/progress" className="nav-link mb-5 mt-2 text-secondary">Progress bar</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/cards" className="nav-link mb-5 mt-2 text-secondary">Cards</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/layer" className="nav-link mb-5 mt-2 text-secondary">Layer</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/toastm" className="nav-link mb-5 mt-2 text-secondary">Toastm</Link>
                 </li>
             </ul>
         </nav>
-        <Outlet/>   {/*outlet을 꼭 선언해야 함,선언하지 않으면 제대로 작동하지 않음 */}
+        <Outlet/> {/*선언하지 않으면 제대로 작동하지 않음*/}
         </>
-    );
+    )
 }
-
 export default Header;

@@ -1,67 +1,78 @@
-import { Container,Row,Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-const Btn=()=>{
+const Btn = () => {
     return(
         <>
         <Container>
             <Row>
                 <Col md={3}>
-                  <h1 className="my-5">일반버튼</h1>
-                  <button className="btn">btn</button><br/>
-                  <button className="btn btn-primary">btn-primary</button><br/>
-                  <button className="btn btn-secondary">btn-secondary</button><br/>
-                  <button className="btn btn-success">btn-success</button><br/>
-                  <button className="btn btn-info">btn-info</button><br/>
-                  <button className="btn btn-warning">btn-warning</button><br/>
-                  <button className="btn btn-danger">btn-danger</button><br/>
-                  <button className="btn btn-light">btn-light</button><br/>
-                  <button className="btn btn-link">btn-link</button><br/>
+                    <h1 className="my-5">일반버튼</h1>
+                    <button className="btn mb-2">btn</button><br/>
+                    <button className="btn btn-primary mb-2">btn-primary</button><br/>
+                    <button className="btn btn-secondary mb-2">btn-secondary</button><br/>
+                    <button className="btn btn-success mb-2">btn-success</button><br/>
+                    <button className="btn btn-info mb-2">btn-info</button><br/>
+                    <button className="btn btn-warning mb-2">btn-warning</button><br/>
+                    <button className="btn btn-danger mb-2">btn-danger</button><br/>
+                    <button className="btn btn-light mb-2">btn-light</button><br/>
+                    <button className="btn btn-link mb-2">btn-link</button><br/>
                 </Col>
-
                 <Col md={3}>
-                  <h1 className="my-5">테두리버튼</h1>
-                  <button className="btn btn-outline-primary">btn-outline-primary</button><br/>
-                  <button className="btn btn-outline-secondary">btn-outline-secondary</button><br/>
-                  <button className="btn btn-outline-success">btn-outline-success</button><br/>
-                  <button className="btn btn-outline-info">btn-outline-info</button><br/>
-                  <button className="btn btn-outline-warning">btn-outline-warning</button><br/>
-                  <button className="btn btn-outline-danger">btn-outline-danger</button><br/>
-                  <button className="btn btn-outline-dark">btn-outline-dark</button><br/>
-                  <button className="btn btn-outline-light text-dark">btn-outline-light</button><br/>
+                    <h1 className="my-5">테두리버튼</h1>
+                    <button className="btn btn-outline-primary mb-2">btn-outline-primary</button>
+                    <button className="btn btn-outline-secondary mb-2">btn-outline-secondary</button>
+                    <button className="btn btn-outline-warning mb-2">btn-outline-warning</button>
+                    <button className="btn btn-outline-danger mb-2">btn-outline-danger</button>
+                    <button className="btn btn-outline-success mb-2">btn-outline-success</button>
+                    <button className="btn btn-outline-dark mb-2">btn-outline-dark</button>
+                    <button className="btn btn-outline-info mb-2">btn btn-outline-info</button>
+                    <button className="btn btn-outline-light text-dark mb-2">btn-outline-light</button>
                 </Col>
-
                 <Col md={3}>
-                  <h1 className="my-5">블록버튼</h1>
-                  <div className="d-grid">
-                  <button className="btn btn-success btn-block">블록버튼</button>
-                  </div>
+                    <h1 className="my-5">블록버튼</h1>
+                    <div className="d-grid">
+                        <button className="btn btn-danger btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-warning btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-success btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-info btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-primary btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-secondary btn-block mb-2">블록버튼</button>
+                    </div>
+                    <div className="d-grid">
+                        <button className="btn btn-light btn-block mb-2">블록버튼</button>
+                    </div>
                 </Col>
-
                 <Col md={3}>
-                  <h1 className="my-5">버튼사이즈</h1>
-                  <button className="btn btn-danger">노멀</button><br/>
-                  <button className="btn btn-danger btn-lg">큰</button><br/>
-                  <button className="btn btn-danger btn-sm">작은</button><br/>
+                    <h1 className="my-5">버튼사이즈</h1>
+                    <button className="btn btn-danger mb-2">nomal</button><br/>
+                    <button className="btn btn-warning btn-lg mb-2">big</button><br/>
+                    <button className="btn btn-success btn-sm mb-2">small</button>
                 </Col>
             </Row>
-
             <Row>
                 <Col>
-                  <h1>버튼 그룹</h1>
-                  <div className="d-flex justify-content-end my-5">
-                    <div className="btn-group">
-                        <button className="btn btn-outline-primary">쓰기</button>
-                        <button className="btn btn-outline-success">수정</button>
-                        <button className="btn btn-outline-danger">삭제</button>
+                    <h1>버튼 그룹</h1>
+                    <div className="d-flex justify-content-end my-5">
+                        <div className="btn-group">
+                            <div className="btn btn-outline-primary">쓰기</div>
+                            <div className="btn btn-outline-warning">수정</div>
+                            <div className="btn btn-outline-danger">삭제</div>
+                        </div>
                     </div>
-                  </div>
                 </Col>
             </Row>
-        </Container> 
+        </Container>
         </>
     );
-
-
 }
-
 export default Btn;

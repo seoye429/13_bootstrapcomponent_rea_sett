@@ -1,121 +1,108 @@
-import { Container,Row,Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-const Alerts=()=>{
+const Alerts = () => {
     return(
         <>
-        <Container fluid> {/*부트스트랩에서는 원래는 class="container-fluid" */}
-                       <Row>
-                <Col lg={12} md={12} sm={6}>
-                <div className="alert alert-success alert-dismissible fade show">
-                    <button className="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>
-                        alert-success
-                    </strong>
-                </div> 
-
-                <div className="alert alert-info alert-dismissible fade show">
-                    <button className="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>
-                        alert-info
-                    </strong>
-                </div>
-
-                <div className="alert alert-warning alert-dismissble fade show">
-                    <button className="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>
-                        alert-warning
-                    </strong>
-                </div>
-
-                <div className="alert alert-danger">
-                    <strong>
-                        alert-danger
-                    </strong>
-                </div>
-
-                <div className="alert alert-primary">
-                    <strong>
-                        alert-primary
-                    </strong>
-                </div>
-
-                <div className="alert alert-secondary">
-                    <strong>
-                        alert-secondary
-                    </strong>
-                </div>
-
-                <div className="alert alert-dark">
-                    <strong>
-                        alert-dark
-                    </strong>
-                </div>
-
-                <div className="alert alert-light">
-                    <strong>
-                        alert-light
-                    </strong>
-                </div>
-                </Col>
-            </Row>
-
-
+        <Container fluid>{/* class="container-fluid" */}
             <Row>
                 <Col lg={12} md={12} sm={6}>
-                <div className="alert alert-success">
-                    <strong>
-                        alert-success
-                    </strong>
-                </div>
-
-                <div className="alert alert-info">
-                    <strong>
-                        alert-info
-                    </strong>
-                </div>
-
-                <div className="alert alert-warning">
-                    <strong>
-                        alert-warning
-                    </strong>
-                </div>
-
-                <div className="alert alert-danger">
-                    <strong>
-                        alert-danger
-                    </strong>
-                </div>
-
-                <div className="alert alert-primary">
-                    <strong>
-                        alert-primary
-                    </strong>
-                </div>
-
-                <div className="alert alert-secondary">
-                    <strong>
-                        alert-secondary
-                    </strong>
-                </div>
-
-                <div className="alert alert-dark">
-                    <strong>
-                        alert-dark
-                    </strong>
-                </div>
-
-                <div className="alert alert-light">
-                    <strong>
-                        alert-light
-                    </strong>
-                </div>
+                    <div className="alert alert-success alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>★ alert-success ★</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-info alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♠ alert-info ♠</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-warning alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♥ alert-warning ♥</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-danger alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♣ alert-danger ♣</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-primary alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♬ alert-primary ♬</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-secondary alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>☆ alert-secondary ☆</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-dark alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♡ alert-dark ♡</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-light alert-dismissible fade show text-center">
+                        <button className="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>
+                            <h1>♧ alert-light ♧</h1>
+                        </strong>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={12} md={12} sm={6}>
+                    <div className="alert alert-success text-center">
+                        <strong>
+                            <h1>★ alert-success ★</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-info text-center">
+                        <strong>
+                            <h1>♠ alert-info ♠</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-warning text-center">
+                        <strong>
+                            <h1>♥ alert-warning ♥</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-danger text-center">
+                        <strong>
+                            <h1>♣ alert-danger ♣</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-primary text-center">
+                        <strong>
+                            <h1>♬ alert-primary ♬</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-secondary text-center">
+                        <strong>
+                            <h1>☆ alert-secondary ☆</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-dark text-center">
+                        <strong>
+                            <h1>♡ alert-dark ♡</h1>
+                        </strong>
+                    </div>
+                    <div className="alert alert-light text-center">
+                        <strong>
+                            <h1>♧ alert-light ♧</h1>
+                        </strong>
+                    </div>
                 </Col>
             </Row>
         </Container>
-
-
         </>
     );
 }
-
 export default Alerts;
+//Alert은 경고창입니다

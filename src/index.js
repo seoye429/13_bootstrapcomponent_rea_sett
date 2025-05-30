@@ -1,52 +1,52 @@
 import React from 'react';
 //라우터 선언
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import ReactDOM from 'react-dom/client';
-// import App from './App';  함수에서 app을 선언해서 필요없어짐
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 //부트스트랩을 사용하기 위한 cdn선언
-import 'bootstrap/dist/css/bootstrap.min.css';   //혹은 index.html에 선언
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-import Header from './include/Header';  //라우팅 용
+import ReactDOM from 'react-dom/client';
+import Header from './include/Header';
 import Home from './pages/Home';
 import Cont from './pages/Cont';
 import Typo from './pages/Typo';
 import Color from './pages/Color';
-import Tb from './pages/Tb';   
-import Img from './pages/Img'; 
+import Table from './pages/Table';
+import Img from './pages/Img';
 import Jumbo from './pages/Jumbo';
 import Alerts from './pages/Alerts';
 import Btn from './pages/Btn';
 import Badges from './pages/Badges';
-
-
+import Progress from './pages/Progress';
+import Cards from './pages/Cards';
+import Layer from './pages/Layer';
+import ToastM from './pages/ToastM';
 
 
 export default function App(){
   return(
-    <BrowserRouter>    
-      <Routes>
-        <Route path="/" element={<Header/>}>   {/* 헤더*/}  {/*컴포넌트용 */}
-          <Route index element={<Home/>}/>   {/* 바디*/}
-          <Route path="container" element={<Cont/>}/>
-          <Route path="typo" element={<Typo/>}/>
-          <Route path="color" element={<Color/>}/>
-          <Route path="tb" elemnt={<Tb/>}/>
-          <Route path="img" elemnt={<Img/>}/>
-          <Route path="jumbo" elemnt={<Jumbo/>}/>
-          <Route path="alerts" elemnt={<Alerts/>}/>
-          <Route path="button" elemnt={<Btn/>}/>
-          <Route path="badges" elemnt={<Badges/>}/>
+    <BrowserRouter>
+      <Routes>{/*위에 BrowserRouter을 그룹화해줌*/}
+        <Route path="/" element={<Header/>}>{/*path는 기본적으로 경로 | header*/}
+          <Route index element={<Home/>}/>{/*body*/}
+          <Route path="container" element={<Cont/>}/> {/*이친구가 주소라 잡힘*/}
+          <Route path="typo" element={<Typo/>}/> 
+          <Route path="color" element={<Color/>}/> 
+          <Route path="table" element={<Table/>}/>
+          <Route path="img" element={<Img/>}/>
+          <Route path="jumbo" element={<Jumbo/>}/>
+          <Route path="alerts" element={<Alerts/>}/>
+          <Route path="btn" element={<Btn/>}/>
+          <Route path="badges" element={<Badges/>}/>
+          <Route path="progress" element={<Progress/>}/>
+          <Route path="cards" element={<Cards/>}/>
+          <Route path="layer" element={<Layer/>}/>
+          <Route path="toastm" element={<ToastM/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
   );
-
 }
-// 컴포넌트 만들기,그룹화,페런츠  index.js안에서 한페이지에서 모든걸 처리 가능
-
-
-const root=ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App/>);  /*위에 이 문법은 리액트 18버전부터 */
-
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App/>);
+//DOM = Document Object Model 의 준말
+/* 위에 이 문법은 리엑트 18버전부터 */
