@@ -4,6 +4,36 @@ const Form=()=>{
     return(
         <>
         <Container fluid>  {/*div class="container-fluid" 에서 변형된것 */}
+            <div className="border my-5">
+            <Row>
+                <Col sm={6}>
+                  <h1>form-floating</h1>  {/*floating: 라벨이 인풋 안에 포함된느것 */}
+                  <div className="form-floating mb-3 mt-3">
+                    <input type="text" className="form-control" />
+                    <label htmlFor="email">Email</label>
+                  </div>
+
+                  <div className="form-floating mb-3 mt-3">
+                    <textarea className="form-control" id="comment" name="text"></textarea>
+                    <label htmlFor="comment">Comments</label>
+                  </div>
+                </Col>
+                <Col sm={6}>
+                  <h1>Validation</h1>
+                  <form action="" className="was-validated">
+                    <div className="">
+                        <label htmlFor="">이름: </label>
+                        <input type="text" className="form-control" name="" required />
+                        <div className="valid-feedback">오케이</div>
+                        <div className="invalid-feedback">잘못됨</div>
+                    </div>
+                  </form>
+                </Col>
+            </Row>
+            </div>
+
+
+            <div className="border my-5">
             <Row>
                 <Col sm={4}>
                   <div className="input-group mt-3">
@@ -31,8 +61,9 @@ const Form=()=>{
                  </div>
                 </Col>
             </Row>
+            </div>
 
-
+            <div className="border my-5">
             <div className="row">
                 <div className="col-md-4">
                     <h1>Input Group</h1>
@@ -56,8 +87,9 @@ const Form=()=>{
                     </div>
                 </div>
             </div>
-
-
+            </div>
+            
+            <div className="border my-5">
             <Row>
                 <Col md={2}>
                   <h1>select</h1>
@@ -134,6 +166,9 @@ const Form=()=>{
 
                 </Col>
             </Row>
+            </div>
+
+            <div className="border my-5">
             <Row>
                 <Col>
                   <h1>form 반응형으로 만들기</h1>
@@ -147,8 +182,9 @@ const Form=()=>{
                   <input type="password" className="form-control" placeholder="Enter password" />
                 </Col>
             </Row>
+            </div>
 
-
+            <div className="border my-5">
             <Row>
                 <Col md={4}>
                   <h1>Color Picker</h1>
@@ -186,6 +222,7 @@ const Form=()=>{
                   </div>  {/*textarea은 무조건 한줄로 써야 함 */}
                 </Col>
             </Row>
+            </div>
         </Container>
         </>
     );
