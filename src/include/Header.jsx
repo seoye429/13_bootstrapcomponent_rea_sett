@@ -28,6 +28,22 @@ const Header = () => {
                     <Link to="/color" className="nav-link text-secondary">Bootstrap_basic_color</Link>
                 </li>
 
+                <li className="nav-item">
+                    <Link to="/flex" className="nav-link text-secondary">Flex 유연하게</Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link to="/flex2" className="nav-link text-secondary">Flex2 유연하게2</Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link to="/hooks" className="nav-link text-secondary">Hooks</Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link to="/effect" className="nav-link text-secondary">useEffect</Link>
+                </li>
+
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">
                         bootstrap component
@@ -40,10 +56,10 @@ const Header = () => {
                             <Link to="/img" className="nav-link mb-1 mt-1 text-secondary">Image</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/jumbo" className="nav-link mb-1 mt-1 text-secondary">Jumbotron</Link>
+                            <Link to="/jumbo" className="nav-link mb-1 mt-1 text-secondary">Jumbotron점보트론</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/alerts" className="nav-link mb-1 mt-1 text-secondary">Alerts</Link>
+                            <Link to="/alerts" className="nav-link mb-1 mt-1 text-secondary">Alerts경고창</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/btn" className="nav-link mb-1 mt-1 text-secondary">Button</Link>
@@ -52,7 +68,7 @@ const Header = () => {
                             <Link to="/badges" className="nav-link mb-1 mt-1 text-secondary">Badges</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/progress" className="nav-link mb-1 mt-1 text-secondary">Progress bar</Link>
+                            <Link to="/progress" className="nav-link mb-1 mt-1 text-secondary">Progress bar프로그레스 바</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/cards" className="nav-link mb-1 mt-1 text-secondary">Cards</Link>
@@ -61,10 +77,10 @@ const Header = () => {
                             <Link to="/layer" className="nav-link mb-1 mt-1 text-secondary">Layer</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/toastm" className="nav-link mb-1 mt-1 text-secondary">Toastm</Link>
+                            <Link to="/toastm" className="nav-link mb-1 mt-1 text-secondary">Toastm토스트메세지</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/pagination" className="nav-link mb-1 mt-1 text-secondary">Pagination</Link>
+                            <Link to="/pagination" className="nav-link mb-1 mt-1 text-secondary">Pagination리스트그룹</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/list" className="nav-link mb-1 mt-1 text-secondary">List</Link>
@@ -75,6 +91,7 @@ const Header = () => {
                         <li className="nav-item">
                             <Link to="/form" className="nav-link mb-1 mt-1 text-secondary">Form양식</Link>
                         </li>
+
                     </ul>
                 </li>    
             </ul>
