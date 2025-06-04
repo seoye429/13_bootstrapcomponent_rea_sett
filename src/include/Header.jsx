@@ -36,12 +36,44 @@ const Header = () => {
                     <Link to="/flex2" className="nav-link text-secondary">Flex2 유연하게2</Link>
                 </li>
 
-                <li className="nav-item">
-                    <Link to="/hooks" className="nav-link text-secondary">Hooks</Link>
-                </li>
 
-                <li className="nav-item">
-                    <Link to="/effect" className="nav-link text-secondary">useEffect</Link>
+
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">
+                        React-Bootstrap
+                    </a>
+                    <ul className="dropdown-menu mb-5">
+                        <li className="nav-item">
+                            <Link to="/hooks" className="nav-link text-secondary">Hooks</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/effect" className="nav-link text-secondary">useEffect</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/tabss" className="nav-link text-secondary">Tabs</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/buttons" className="nav-link text-secondary">Buttons</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/ref" className="nav-link text-secondary">Ref</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/fig" className="nav-link text-secondary">Figures</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/tb" className="nav-link text-secondary">Table</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/modals" className="nav-link text-secondary">Modals</Link>
+                        </li>
+                    </ul>
                 </li>
 
                 <li className="nav-item dropdown">

@@ -28,6 +28,12 @@ import Flex from './pages/Flex';
 import Flex2 from './pages/Flex2';
 import Hooks from './pages/Hooks';
 import Effect from './pages/Effect';
+import Buttons from './boot/Buttons';
+import Tabss from './boot/Tabss';
+import Ref from './pages/Ref';
+import Fig from './boot/Fig';
+import Tb from './boot/Tb';
+import Modals from './boot/Modals';
 
 
 export default function App(){
@@ -57,6 +63,12 @@ export default function App(){
           <Route path="flex2" element={<Flex2/>}/>
           <Route path="hooks" element={<Hooks/>}/>
           <Route path="effect" element={<Effect/>}/>
+          <Route path="buttons" element={<Buttons/>}/>
+          <Route path="tabss" element={<Tabss/>}/>
+          <Route path="ref" element={<Ref/>}/>
+          <Route path="fig" element={<Fig/>}/>
+          <Route path="tb" element={<Tb/>}/>
+          <Route path="modals" element={<Modals/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
