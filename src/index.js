@@ -34,6 +34,8 @@ import Ref from './pages/Ref';
 import Fig from './boot/Fig';
 import Tb from './boot/Tb';
 import Modals from './boot/Modals';
+import Pagen from './boot/Pagen';
+import Ts from './boot/Ts';
 
 
 export default function App(){
@@ -68,7 +70,9 @@ export default function App(){
           <Route path="ref" element={<Ref/>}/>
           <Route path="fig" element={<Fig/>}/>
           <Route path="tb" element={<Tb/>}/>
+          <Route path="pagen" element={<Pagen/>}/>
           <Route path="modals" element={<Modals/>}/>
+          <Route path="ts" element={<Ts/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
